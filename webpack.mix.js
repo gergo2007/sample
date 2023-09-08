@@ -1,17 +1,48 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
+const path = require('path')
+const webpack = require('webpack')
 
-/*
- |--------------------------------------------------------------------------
- | Mix Asset Management
- |--------------------------------------------------------------------------
- |
- | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel applications. By default, we are compiling the CSS
- | file for the application as well as bundling up all the JS files.
- |
- */
+require('vuetifyjs-mix-extension')
+
+let chunkFilename = 'js/chunks/[name].js?v=[hash]'
+
+mix.options({
+    enableCssModules: true,
+    processCssUrls: false
+})
+
+mix.webpackConfig({
+    output: {
+        chunkFilename: chunkFilename,
+        filename: '[name].js'
+    },
+
+    resolve: {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+            '@root': path.resolve(
+                __dirname
+            ),
+
+            '@js': path.resolve(
+                __dirname,
+                'resources/js'
+            ),
+
+            '@components': path.resolve(
+                __dirname,
+                'resources/js/components'
+            ),
+
+            'ziggy': path.resolve("vendor/tightenco/ziggy/dist"),
+        }
+    },
+})
+
 
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]).vue();
+    .sass('resources/scss/app.scss', 'public/css')
+    .copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts')
+    .vuetify('vuetify-loader', 'resources/scss/override.scss')
+    .vue()
+    .version()

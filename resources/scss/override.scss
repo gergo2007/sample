@@ -1,0 +1,61 @@
+$body-font-family: 'Inter', serif;
+
+$heading-font-family: 'Poppins', serif;
+
+// Text input
+$text-field-filled-full-width-outlined-dense-slot-min-height: 40px;
+$text-field-filled-full-width-outlined-slot-min-height: 40px;
+$text-field-border-radius: 10px;
+
+$text-field-enclosed-prepend-append-margin-top: 8px;
+$text-field-outlined-label-position-x: 10px;
+$text-field-outlined-append-prepend-outer-margin-top: 8px;
+$text-field-outlined-label-position-x: 10px;
+
+$utilities: (
+    'width': (
+        responsive: true,
+        property: width,
+        class: w,
+        values: (
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+        ),
+    ),
+    'height': (
+        responsive: true,
+        property: height,
+        class: h,
+        values: (
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+        ),
+    ),
+);
+
+$btn-sizes: (
+    'default': 42,
+
+    'x-large': 56,
+);
+
+$btn-font-sizes: (
+    'default': 1rem,
+
+    'large': 1rem,
+    'x-large': 1.5rem
+);
+
+$btn-rounded-border-radius: 0.625rem;
+$btn-hover-opacity: 0.2;
+$btn-letter-spacing: unset;
+$btn-text-transform: none;
+$btn-outline-border-width: 2px;
+
+
+$text-field-rounded-border-radius: 10px;
+$text-field-solo-control-min-height: 40px;

@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+html {
+    background-color: #333333;
+}
+
+[v-cloak] {
+    display: none !important;
+}
+
+body.main-app-wrapper {
+    background: black;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+
+    [v-cloak] {
+        display: none !important;
+    }
+}

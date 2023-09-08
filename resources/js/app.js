@@ -1,23 +1,67 @@
-require('./bootstrap');
-import vue from 'vue'
-window.Vue = vue;
+require('./bootstrap')
 
-import App from './components/App.vue';
-import VueRouter from 'vue-router';
-import VueAxios from 'vue-axios';
-import axios from 'axios';
-import {routes} from './routes';
- 
-Vue.use(VueRouter);
-Vue.use(VueAxios, axios);
- 
-const router = new VueRouter({
-    mode: 'history',
-    routes: routes
-});
- 
-const app = new Vue({
-    el: '#app',
-    router: router,
-    render: h => h(App),
-});
+import '../scss/app.scss'
+
+import Vue from 'vue'
+
+import {get, debounce} from 'lodash'
+
+let lodash = {
+    get: get,
+    debounce: debounce,
+}
+
+Vue.prototype._ = lodash
+window._ = Vue.prototype._
+
+import vueCookie from 'vue-cookie'
+Vue.use(vueCookie)
+
+import VoerroTagsInput from '@voerro/vue-tagsinput'
+Vue.component('tags-input', VoerroTagsInput)
+
+import VueLazyYoutubeVideo from "vue-lazy-youtube-video"
+Vue.component('lazy-youtube-video', VueLazyYoutubeVideo)
+
+import vuescroll from 'vuescroll'
+Vue.use(vuescroll, {
+    ops: {
+        bar: {
+            background: '#6C5DD3',
+            onlyShowBarOnScroll: false,
+            keepShow: true,
+        },
+
+        rail: {
+            background: '#01a99a',
+        }
+    }
+})
+
+import { createPinia, PiniaVuePlugin, mapStores } from 'pinia'
+Vue.use(PiniaVuePlugin)
+
+const pinia = createPinia()
+import { useAppStore } from "./Stores/app"
+
+import Vuetify from '@js/Plugins/vuetify/script'
+import router from './routes';
+
+let webApp = new Vue({
+    el: "#app",
+    router,
+    vuetify: Vuetify,
+    pinia,
+
+    data() {
+        return {
+            deviceID: null,
+        }
+    },
+
+    computed: {
+        ...mapStores(useAppStore),
+    },
+
+    mixins: window.mixins,
+})
