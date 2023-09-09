@@ -23,6 +23,12 @@ Vue.component('tags-input', VoerroTagsInput)
 import VueLazyYoutubeVideo from "vue-lazy-youtube-video"
 Vue.component('lazy-youtube-video', VueLazyYoutubeVideo)
 
+import Welcome from "./components/Welcome.vue";
+Vue.component('welcome', Welcome)
+
+import List from './components/article/List.vue';
+Vue.component('article-list', List)
+
 import vuescroll from 'vuescroll'
 Vue.use(vuescroll, {
     ops: {

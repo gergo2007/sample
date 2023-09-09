@@ -11,6 +11,7 @@
     </head>
     <body class="main-app-wrapper">
         <v-app id="app" v-cloak>
+            <article-list></article-list>
         </v-app>
         <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
     </body>

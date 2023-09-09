@@ -1,7 +1,7 @@
 {
-    "/js/app.js": "/js/app.js?id=b8d599b44f827d2132c3d0cc9b5d63c6",
-    "/js/chunks/resource/js/components/welcome.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/welcome.js?v=ee4f17f669051f9e?id=f963d0c1e1990c9eb3ea51792c2ed0ce",
-    "/js/chunks/resource/js/components/category/list.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/category/list.js?v=ee4f17f669051f9e?id=eba464a89ec03cb8aac9a774e1f0cd06",
+    "/js/app.js": "/js/app.js?id=af36b08fb2d8a8abbe536e9432ec0344",
+    "/js/chunks/resource/js/components/welcome.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/welcome.js?v=ee4f17f669051f9e?id=983830671a5094c53929e33a002508ff",
+    "/js/chunks/resource/js/components/category/list.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/category/list.js?v=ee4f17f669051f9e?id=4c5b8687eb228e868f2fc9a7715e85f3",
     "/js/chunks/resource/js/components/category/add.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/category/add.js?v=ee4f17f669051f9e?id=bf9c3fbeb5c35a76eaafa98e18255745",
     "/js/chunks/resource/js/components/category/edit.js?v=ee4f17f669051f9e": "/js/chunks/resource/js/components/category/edit.js?v=ee4f17f669051f9e?id=55c7756ecf7d0e706347845fb656db84",
     "/css/app.css": "/css/app.css?id=b2eb479a2d78652b7d30bb232b43d319",
@@ -20,8 +20,17 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf?id=d44877cb1fa07af67d56e4d86d39dd96",
     "/webfonts/fa-solid-900.woff": "/webfonts/fa-solid-900.woff?id=26f963f67e793d91cc76426d43836849",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2?id=184257670d2e18e37fc93ca106b9c6a7",
-    "/js/chunks/resource/js/components/welcome.js?v=afffe28ada19a63f": "/js/chunks/resource/js/components/welcome.js?v=afffe28ada19a63f?id=f963d0c1e1990c9eb3ea51792c2ed0ce",
-    "/js/chunks/resource/js/components/category/list.js?v=afffe28ada19a63f": "/js/chunks/resource/js/components/category/list.js?v=afffe28ada19a63f?id=eba464a89ec03cb8aac9a774e1f0cd06",
-    "/js/chunks/resource/js/components/category/add.js?v=afffe28ada19a63f": "/js/chunks/resource/js/components/category/add.js?v=afffe28ada19a63f?id=bf9c3fbeb5c35a76eaafa98e18255745",
-    "/js/chunks/resource/js/components/category/edit.js?v=afffe28ada19a63f": "/js/chunks/resource/js/components/category/edit.js?v=afffe28ada19a63f?id=55c7756ecf7d0e706347845fb656db84"
+    "/js/chunks/resource/js/components/welcome.js?v=4e73d01f87449073": "/js/chunks/resource/js/components/welcome.js?v=4e73d01f87449073?id=983830671a5094c53929e33a002508ff",
+    "/js/chunks/resource/js/components/category/list.js?v=4e73d01f87449073": "/js/chunks/resource/js/components/category/list.js?v=4e73d01f87449073?id=4c5b8687eb228e868f2fc9a7715e85f3",
+    "/js/chunks/resource/js/components/category/add.js?v=4e73d01f87449073": "/js/chunks/resource/js/components/category/add.js?v=4e73d01f87449073?id=bf9c3fbeb5c35a76eaafa98e18255745",
+    "/js/chunks/resource/js/components/category/edit.js?v=4e73d01f87449073": "/js/chunks/resource/js/components/category/edit.js?v=4e73d01f87449073?id=55c7756ecf7d0e706347845fb656db84",
+    "/js/chunks/resource/js/components/category/list.js?v=c7ee1c100abdfbf0": "/js/chunks/resource/js/components/category/list.js?v=c7ee1c100abdfbf0?id=4c5b8687eb228e868f2fc9a7715e85f3",
+    "/js/chunks/resource/js/components/category/add.js?v=c7ee1c100abdfbf0": "/js/chunks/resource/js/components/category/add.js?v=c7ee1c100abdfbf0?id=bf9c3fbeb5c35a76eaafa98e18255745",
+    "/js/chunks/resource/js/components/category/edit.js?v=c7ee1c100abdfbf0": "/js/chunks/resource/js/components/category/edit.js?v=c7ee1c100abdfbf0?id=55c7756ecf7d0e706347845fb656db84",
+    "/js/chunks/resource/js/components/category/list.js?v=9ae28c9d62a4a96e": "/js/chunks/resource/js/components/category/list.js?v=9ae28c9d62a4a96e?id=4c5b8687eb228e868f2fc9a7715e85f3",
+    "/js/chunks/resource/js/components/category/add.js?v=9ae28c9d62a4a96e": "/js/chunks/resource/js/components/category/add.js?v=9ae28c9d62a4a96e?id=bf9c3fbeb5c35a76eaafa98e18255745",
+    "/js/chunks/resource/js/components/category/edit.js?v=9ae28c9d62a4a96e": "/js/chunks/resource/js/components/category/edit.js?v=9ae28c9d62a4a96e?id=55c7756ecf7d0e706347845fb656db84",
+    "/js/chunks/resource/js/components/category/list.js?v=945af820f9359423": "/js/chunks/resource/js/components/category/list.js?v=945af820f9359423?id=4c5b8687eb228e868f2fc9a7715e85f3",
+    "/js/chunks/resource/js/components/category/add.js?v=945af820f9359423": "/js/chunks/resource/js/components/category/add.js?v=945af820f9359423?id=bf9c3fbeb5c35a76eaafa98e18255745",
+    "/js/chunks/resource/js/components/category/edit.js?v=945af820f9359423": "/js/chunks/resource/js/components/category/edit.js?v=945af820f9359423?id=55c7756ecf7d0e706347845fb656db84"
 }

@@ -60,7 +60,7 @@ var staticRenderFns = [function () {
     staticClass: "container mt-5"
   }, [_c("div", {
     staticClass: "col-12 text-center"
-  })]);
+  }, [_vm._v("\n      HELLO!!\n    ")])]);
 }];
 render._withStripped = true;
 
